@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Grow Up - Contato</title>
+</head>
+<body>
+    <header>
+<!--cabeçalho-->
+<div class="container">
+    <a href="index.html" class="logo">
+        <img src="img/growup-logo.png" alt="logo do grow up">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="orcamento.html">Orçamento</a></li>
+        </ul>
+    </nav>
+
+</div>
+    </header>
+    <main>
+        <section class="container">
+            <h1>Contato</h1>
+            <div class="contato">
+                <form method="POST" action="contato.html">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome"  required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem"  required></textarea>
+
+                    <p>Selecione um assunto:</p>
+
+                    <input type="radio" name="assunto" id="assunto_elogio" value="Elogio">
+                    <label for="assunto_elogio">Elogio</label>
+
+                    <input type="radio" name="assunto" id="assunto_reclamacao" value="reclamacao">
+                    <label for="assunto_reclamacao">Reclamação</label>
+
+                    <input type="radio" name="assunto" id="assunto_sugestao"
+                    value="sugestao">
+                    <label for="assunto_sugestao">Sugestão</label>
+
+                    <input type="radio" name="assunto" id="assunto_outros"
+                    value="outros">
+                    <label for="assunto_outros">Outros</label>
+                   <!-- <input type="submit" value="">-->
+                   <button type="submit">Enviar</button>
+                </form>
+                <div class="info">
+                    <p>Email: <a href="mailto:contato@growup.com>">contato@growup.com</a></p>
+                    <p>Telefone:
+                        <a href="tel:11981223344">(11) 98122-3344</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511981223344&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site!" target="_blank">(WhatsApp)</a>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.311965646742!2d-46.712309085704085!3d-23.628996284649364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce51208bd3946f%3A0x131bec23828ac660!2sRua%20Alexandre%20Dumas%2C%202051%20-%202%C2%B0%20andar%20-%20Ch%C3%A1cara%20Santo%20Ant%C3%B4nio%20(Zona%20Sul)%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004717-004!5e0!3m2!1spt-BR!2sbr!4v1620050815182!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </p>
+
+                </div>
+            </div>
+
+        </section>
+
+        </div>
+    </main>
+    <footer>
+        <!-- rodapé -->
+        <p>copyright - Grow Up</p>
+    </footer>
+</body>
+</html>

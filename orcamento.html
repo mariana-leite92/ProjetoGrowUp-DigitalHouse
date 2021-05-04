@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Grow Up - Serviços</title>
+</head>
+<body>
+    <header>
+<!--cabeçalho-->
+<div class="container">
+    <a href="index.html" class="logo">
+        <img src="img/growup-logo.png" alt="logo do grow up">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="orcamento.html">Orçamento</a></li>
+        </ul>
+    </nav>
+
+</div>
+    </header>
+    <main>
+        <section>
+            <h1>Orçamento</h1>
+            <div class="orcamento">
+                <form method="POST" action="orcamento.html">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                    <fieldset>
+                    <legend>Selecione um servicos:</legend>
+
+                    <input type="checkbox" name="desenvolvimento_web" id="desenvolvimento_web" value="desenvolvimento_web">
+                    <label for="desenvolvimento_web">Desenvolvimento Web</label>
+
+                    <input type="checkbox" name="marketing_digital" id="marketing_digital" value="marketing_digital">
+                    <label for="marketing_digital">Marketing Digital</label>
+
+                    <input type="checkbox" name="consultoria_ux" id="consultoria_ux"
+                    value="consultoria_ux">
+                    <label for="consultoria_ux">Consultoria UX</label>
+                    
+                    </fieldset>
+                    <fieldset>
+
+                     <legend>Urgencia na entrega</legend>
+                    <input type="radio" name="urgencia" id="urgencia"
+                    value="urgencia">
+                    <label for="urgencia">Sim</label>
+                    <input type="radio" name="urgencia" id="urgencia"
+                    value="urgencia">
+                    <label for="urgencia">Não</label>
+                    </fieldset>
+
+                    <label for="data_entrega">Data de Entrega</label>
+                    <input type="date" name="data_entrega" id="data_entrega">
+
+                    <label for="descricao">Descrição</label>
+                    <textarea name="descricao" id="descricao" required></textarea>
+
+                    <label for="anexos">Anexos</label>
+                    <input type="file" name="anexos" id="anexos">
+
+                    <label for="forma_pagamento">Forma de pagamento</label>
+                    <select name="forma_pagamento" id="forma_pagamento" required>
+                        <option selected disabled>Selecione um opção</option>
+                        <option value="Débito">Débito</option>
+                        <option value="Crédito">Crédito</option>
+                        <option value="Transferência bancaria">Transferência bancária</option>
+                        <option value="Boleto">Boleto</option>
+                    </select>
+
+                    <label for="origem_cliente">Como conheceu a Grow Up</label>
+                    <select name="origem_cliente" id="origem_cliente">
+                        <option selected disabled>Selecione uma opção</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="Google">Google</option>
+                        <option value="Amarelinho">Amarelinho</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <!-- rodapé -->
+        <p>copyright - Grow Up</p>
+    </footer>
+</body>
+</html>
